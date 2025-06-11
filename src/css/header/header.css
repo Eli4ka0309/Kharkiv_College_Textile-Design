@@ -249,7 +249,7 @@
     top: 0;
     height: 100vh;
     width: 250px;
-    background: white;
+    background: black ;
     padding: 40px 20px;
     z-index: 100;
     transition: right 0.3s ease-in-out;
@@ -258,6 +258,7 @@
     right: 0;
   }
 }
+
 @media screen and (max-width: 1105px) {
   .header_nav-burger.active_burger span:first-child {
     transform: rotate(45deg) translateY(8px);
@@ -339,14 +340,7 @@
   .header_nav-burger span:last-child {
     transform: translatey(9px);
   }
-  .header_nav-ul {
-    right: -100vw;
-    transition: right 0.3s ease-in-out;
-    position: fixed;
-  }
-  .header_nav-ul.open {
-    right: 0;
-  }
+
 }
 
 /*# sourceMappingURL=header.css.map */
