@@ -260,13 +260,13 @@
 }
 
 @media screen and (max-width: 1105px) {
-  .header_nav-burger.active_burger span:first-child {
+  .header_nav-burger .active_burger span:first-child {
     transform: rotate(45deg) translateY(8px);
   }
-  .header_nav-burger.active_burger span:nth-child(2) {
+  .header_nav-burger .active_burger span:nth-child(2) {
     opacity: 0;
   }
-  .header_nav-burger.active_burger span:last-child {
+  .header_nav-burger .active_burger span:last-child {
     transform: rotate(-45deg) translateY(-8px);
   }
   .header_nav-li {
