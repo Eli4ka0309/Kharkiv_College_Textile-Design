@@ -1,0 +1,145 @@
+
+.specialty_row {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.specialty_block {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  box-shadow: (0px 0px 15px rgba(0, 0, 0, 0.05));
+
+}
+
+
+.specialty_profession {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: $bgGreySpecialties;
+  position: relative;
+  width: 100%;
+
+
+}
+
+.profession_img {
+  width: 51%;
+
+  object-fit: cover;
+
+  img {
+    width: 100%;
+  }
+}
+
+.profession_txt {
+  width: 49%;
+
+  padding: 20px 40px;
+}
+
+.profession_txt_block {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.profession_txt_subtitle {
+  color: $pink-accent;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.profession_txt_title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.specialty_description {
+  padding: 38px 35px;
+  background: white;
+}
+
+
+.specialty_description_title {
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 20px;
+
+}
+
+.specialty_description_text {
+  p {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.specialty_description_lists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(19px, 0);
+
+  span {
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 10px;
+      height: 2px;
+      background: black;
+      position: absolute;
+      left: -17px;
+      top: 45%;
+      z-index: 1;
+    }
+  }
+
+}
+@media screen and (max-width: 425px){
+  .specialty_block{
+    margin-top: 30px;
+  }
+  .specialty_profession{
+    flex-direction: column;
+  }
+  .profession_img{
+    width: 100%;
+  }
+  .profession_txt{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px 30px;
+  }
+  .profession_txt_block{
+    margin: 0;
+    padding-bottom: 20px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+  .profession_txt_subtitle{
+    font-size: 16px;
+  }
+  .profession_txt_title{
+    font-size: 14px;
+  }
+  .specialty_description{
+    padding: 25px 30px;
+
+  }
+
+}

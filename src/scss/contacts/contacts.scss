@@ -1,0 +1,145 @@
+
+.contacts_row {
+  padding: 40px 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.contacts_row-reception, .contacts_row_accounts {
+  background: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 157px;
+  box-shadow: 0 0 15px 0 #0000000D;
+
+}
+
+.contacts_block {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  h3 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 16px;
+
+  }
+}
+
+.contacts_row_accounts {
+  background: $bgBlack;
+  margin-top: 60px;
+  color: white;
+  padding: 30px 0;
+
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+  }
+
+}
+
+
+.contacts_title {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+
+
+.address {
+  height: 100%;
+  min-height: 589px;
+  background: url("../img/contacts/contacts_map.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 30px;
+
+}
+
+.address_row {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  width: 100%;
+  max-width: 300px;
+  background: white;
+  padding: 10px 20px;
+
+
+  h4 {
+    font-size: 23px;
+    font-weight: 600;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+  .contacts_map {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
+@media screen and (max-width: 425px) {
+  .contacts_block{
+    margin: 20px 0 20px 0 ;
+    h3,
+    .contacts_title{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 14px;
+      text-align: center;
+    }
+
+  }
+  .contacts_row{
+    padding: 30px 0 ;
+  }
+  .contacts_row-reception,
+  .contacts_row_accounts{
+    flex-direction: column;
+
+  }
+  .contacts_row_accounts{
+    margin-top: 30px;
+  }
+
+  .address_row{
+    max-width: 262px;
+    top: 6%;
+    right: 4%;
+    h4{
+      font-size: 18px;
+
+    }
+    a{
+      font-size: 14px;
+    }
+
+  }
+}

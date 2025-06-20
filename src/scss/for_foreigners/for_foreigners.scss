@@ -1,0 +1,585 @@
+//title_info
+.title_info {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.title_info_content {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+
+  h2 {
+    padding: 7px 27px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+  }
+
+}
+
+//about_admission
+.admission_grid {
+  position: relative;
+  display: grid;
+  grid-template-columns:repeat(12, 1fr);
+  padding: 60px 0;
+  grid-gap: 50px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.admission_grid_grid_block_1 {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+
+.admission_grid_grid_block_2 {
+  grid-column: 1/4;
+  grid-row: 3/3;
+}
+
+.admission_grid_grid_block_3 {
+  grid-column: 1/4;
+  grid-row: 4;
+}
+
+.admission_grid_grid_block_4 {
+  grid-column: 1/4;
+  grid-row: 5/12;
+
+}
+
+.for_foreigners_content_block_img {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+
+}
+
+.admission_grid_grid_block_5 {
+  grid-column: 4/13;
+  grid-row: 1/5;
+}
+
+.admission_grid_grid_block_6 {
+  grid-column: 4/13;
+  grid-row: 5/12;
+}
+
+
+.for_foreigners_content_block {
+  padding: 25px 45px;
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+  h3 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+
+  li {
+    list-style: auto;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.for_foreigners_content_block_list {
+  padding-left: 18px;
+}
+
+.for_foreigners_content_block_symbol {
+  padding-left: 20px;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: black;
+
+    position: absolute;
+    left: 0;
+    top: 3px;
+    z-index: 1;
+
+  }
+}
+
+//tuition_price
+.tuition_price {
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px 0;
+    background: white;
+    margin-top: 60px;
+    border-radius: 8px 8px 0 0;
+    border-left: solid black 1px;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+  }
+}
+
+.tuition_price_annotation {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 20px;
+  background: white;
+  margin-bottom: 60px;
+  border-radius: 0 0 8px 8px;
+  border-bottom: solid black 1px;
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+}
+
+
+.tuition_price_grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows:repeat(2, 1fr);
+  box-shadow: 0 0 15px 0 #0000000D;
+  background: white;
+}
+
+.tuition_price_1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.tuition_price_2 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+.tuition_price_3 {
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+.tuition_price_4 {
+  grid-column: 3;
+  grid-row: 2/3;
+  color: $pink-accent;
+}
+
+.tuition_price_5 {
+  grid-column: 4;
+  grid-row: 2/3;
+  color: $pink-accent;
+}
+
+.tuition_price_6 {
+  grid-column: 5;
+  grid-row: 2/3;
+}
+
+.tuition_price_7 {
+  grid-column: 6;
+  grid-row: 2/3;
+}
+
+.tuition_price_8 {
+  grid-column: 1/3;
+  grid-row: 3;
+
+}
+
+.tuition_price_13 {
+  grid-column: 1/3;
+  grid-row: 4;
+
+}
+
+.tuition_price_18 {
+  grid-column: 1/3;
+  grid-row: 5;
+
+}
+
+.tuition_price_23 {
+  grid-column: 1/3;
+  grid-row: 6;
+
+}
+
+.tuition_price_28 {
+  grid-column: 1/3;
+  grid-row: 7;
+
+}
+
+.tuition_price_33 {
+  grid-column: 1/3;
+  grid-row: 8;
+
+}
+
+.tuition_price_38 {
+  grid-column: 1/3;
+  grid-row: 9;
+
+}
+
+.tuition_price_43 {
+  grid-column: 1/3;
+  grid-row: 10;
+
+}
+
+.tuition_price_48 {
+  grid-column: 1/3;
+  grid-row: 11;
+
+}
+
+.tuition_price_block {
+  padding: 20px 10px;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+//preparatory
+
+.preparatory_grid {
+  position: relative;
+  display: grid;
+  grid-template-columns:repeat(12, 1fr);
+  padding: 60px 0;
+  grid-gap: 50px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.preparatory_grid_block_1 {
+  grid-column: 1/10;
+  grid-row: 1/3;
+}
+
+.preparatory_grid_block_2 {
+  grid-column: 10/13;
+  grid-row: 1/3;
+  width: 100%;
+
+}
+
+.preparatory_grid_block_3 {
+  grid-column: 1/10;
+  grid-row: 3/5;
+}
+
+.preparatory_grid_block_4 {
+  grid-column: 10/13;
+  grid-row: 3;
+}
+
+.preparatory_grid_block_5 {
+  grid-column: 10/13;
+  grid-row: 4;
+}
+
+
+//invitation_to_study
+.invitation_to_study_grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 60px 0;
+  grid-gap: 50px;
+
+  .for_foreigners_content_block_list {
+    li {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.invitation_to_study_grid_1 {
+  grid-column: 1/8;
+  grid-row: 1/4;
+
+}
+
+.invitation_to_study_grid_2 {
+  grid-column: 8/13;
+  grid-row: 1/3;
+}
+
+.invitation_to_study_grid_3 {
+  grid-column: 8/13;
+  grid-row: 3/4;
+
+  span {
+    font-weight: 600;
+  }
+
+}
+
+//entry_visa
+.entry_visa_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 60px 0;
+  grid-gap: 50px;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.entry_visa_grid_1 {
+  grid-column: 1/2;
+
+}
+
+.entry_visa_grid_2 {
+  grid-column: 2;
+
+
+}
+
+.entry_visa_grid_3 {
+  grid-column: 3;
+
+}
+
+.entry_visa_grid_4 {
+  grid-column: 1;
+  grid-row: 2;
+
+}
+
+.entry_visa_grid_5 {
+  grid-column: 2/4;
+  grid-row: 2;
+
+}
+
+//required_documents
+.required_documents_grid {
+  position: relative;
+  padding: 60px 0;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+.required_documents_block {
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    color: $pink-accent;
+  }
+}
+
+//feedback
+
+
+.feedback_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  width: 100%;
+
+  img:first-child {
+    width: 29%;
+
+  }
+
+  img:last-child {
+    width: 29%;
+
+  }
+
+
+}
+
+.feedback_block {
+  width: 33%;
+}
+
+.feedback_block {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 0 15px 0 #0000000D;
+  display: flex;
+  flex-direction: column;
+  padding: 29px 34px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: flex-start;
+  border-radius: 8px;
+  margin: 0 20px;
+  position: relative;
+
+  a {
+    margin-bottom: 10px;
+    color: var(--pinkAccentFeedback);
+
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .entry_visa_grid_3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .admission_grid,
+  .preparatory_grid,
+  .invitation_to_study_grid,
+  .entry_visa_grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    grid-gap: 30px;
+
+  }
+  .required_documents_grid {
+    padding:30px 0;
+  }
+  .tuition_price_annotation,
+  .required_documents_block{
+    margin-bottom: 30px;
+  }
+  .admission_grid_grid_block_1 {
+    grid-column: 1/12;
+
+  }
+  .entry_visa_grid_2 {
+    display: none;
+  }
+  .title_info_content h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title_info_content {
+    h2 {
+      font-size: 16px;
+      padding: 5px 17px;
+    }
+  }
+  .for_foreigners_content_block{
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .tuition_price h3 {
+    margin-top: 30px;
+    font-size: 16px;
+    border-left: solid black 0.5px;
+    border-top: solid black 0.5px;
+    border-right: solid black 0.5px;
+
+  }
+  .tuition_price_block {
+    font-size: 9px;
+    border: 0.5px solid black;
+  }
+  .feedback_row{
+    img{
+      display: none;
+    }
+
+  }
+
+}
+
+

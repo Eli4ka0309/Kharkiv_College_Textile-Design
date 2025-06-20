@@ -1,0 +1,131 @@
+//consultation_admissions_text
+.consultation_admissions_text {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 600;
+    color: $pink-accent;
+    margin-bottom: 15px;
+
+  }
+}
+
+.consultation_admissions_content_row {
+  position: relative;
+  padding: 30px 0;
+  width: 100%;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+
+  }
+}
+
+.consultation_admissions_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+
+}
+
+.consultation_admissions_video {
+  width: 48%;
+  height: auto;
+  border-radius: 60px;
+  position: relative;
+  margin-right: 30px;
+  &:nth-child(2){
+    margin-right: 0;
+  }
+
+
+  h3 {
+    width: 100%;
+    color: white;
+    background: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    border-radius: 8px 8px 0 0;
+
+
+  }
+
+  video {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+}
+.consultation_admissions_link_row{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: $pink-accent;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 30px 0;
+
+  a:hover{
+    text-decoration: revert;
+  }
+}
+@media screen and (max-width: 768px){
+  .consultation_admissions_block{
+    flex-direction: column;
+  }
+  .consultation_admissions_video{
+    width: 100%;
+    &:first-child{
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+    h3{
+      font-size: 9px;
+    }
+  }
+  .consultation_admissions_link_row{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,40 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: black;
+  width: 100%;
+  margin: 0 auto;
+  letter-spacing: 0.03em;
+  background: #F1F1F1;
+
+}
+
+*:hover, :focus, :active, button, ::after, ::before, a {
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+
+  margin: 0 auto;
+
+}
+
+@media screen and (max-width: 425px){
+  html, body{
+    font-size: 12px;
+
+  }
+  h2{
+    font-size: 21px!important;
+  }
+  h3{
+    font-size: 18px!important;
+  }
+  p,a{
+    font-size: 14px!important;
+  }
+
+}

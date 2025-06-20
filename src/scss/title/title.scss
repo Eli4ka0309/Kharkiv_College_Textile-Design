@@ -1,0 +1,45 @@
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  padding: 120px 0 30px;
+  color: $pink-accent;
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $grey-accent;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+
+
+}
+
+.section_title {
+  font-size: 36px;
+  color: $bgBlack;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+  .title{
+    font-size: 30px;
+  }
+  .section_title{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 425px){
+  .title{
+    font-size: 24px;
+    padding: 100px 0 30px;
+  }
+
+}

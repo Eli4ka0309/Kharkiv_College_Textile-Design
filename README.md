@@ -1,0 +1,1 @@
+Developed a fully responsive and cross-browser website for a local design college. Implemented a clean, accessible layout using Bootstrap 5 and SCSS with attention to pixel-perfect styling. Delivered a complete project from design to deployment, including semantic HTML, styling architecture, and performance optimization.
