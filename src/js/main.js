@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", (e) => {
      
       if (!link.closest(".header_sub_nav-ul")) {
-        console.log("Menü linkine tıklandı");
+        console.log("Menu link clicked");
         nav.classList.remove('open');
         burger.classList.remove('active_burger');
         document.body.style.overflow = '';
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.addEventListener("click", (e) => {
         if (window.innerWidth <= 1105) {
           e.preventDefault();
-          console.log("Alt menü tıklandı");
+          console.log("Submenu clicked");
           const isSubMenuVisible = subMenu.style.display === "block";
           
           
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
 
           subMenu.style.display = isSubMenuVisible ? "none" : "block";
-          console.log("Alt menü durumu:", isSubMenuVisible ? "kapatıldı" : "açıldı");
+          console.log("Submenu status:", isSubMenuVisible ? "closed" : "opened");
         }
       });
     }
